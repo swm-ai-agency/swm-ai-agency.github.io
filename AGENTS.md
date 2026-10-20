@@ -1,6 +1,6 @@
 <!-- BEGIN SWM SHARED ENGINEERING -->
 <!-- Generated from swm-ai-agency/swm-ai-native-marketing-agency docs/ENGINEERING-BASELINE.md; edit the source, then regenerate. -->
-<!-- Source SHA-256: 0538ab1c6570234844c32c754ba7d35edb6a3ab80eb2e2e1885ef411ac08dbaa -->
+<!-- Source SHA-256: 23d673b6b165a901489c3e240ec39894c78eb57edda740d845c38bc2519693d7 -->
 
 # Shared engineering baseline
 
@@ -34,6 +34,22 @@ identify the conflicting sources and resolve it before dependent work.
   otherwise permitted data. Add a regression that would detect the original
   failure and relevant recovery errors. Run focused checks before the applicable
   repository gates. Distinguish source, tested, merged, deployed and activated.
+- **Spend verification resources deliberately.** Run focused local checks first
+  when the machine and dependencies can support them. Combine related changes
+  into one reviewable candidate before full hosted CI where repository gates
+  permit; avoid repeating full suites for every intermediate edit. Documentation
+  changes need the applicable documentation checks, not unrelated application
+  suites. Cancel redundant runs only when replacement coverage preserves the
+  required checks. Rerun for changed behavior, failures or unresolved risks;
+  budget savings never justify omitting required tests, review or release gates.
+- **Keep agent context small.** Root instructions contain invariants, commands
+  and a task-to-source map; load relevant sections, not whole linked documents
+  or archives. Use descriptive headings and one authoritative home per rule.
+  Target at most 600 words for this shared block and 2,000 for each root entry
+  including it; keep handoffs to current state, evidence, next step and limits.
+  Split growing detail into linked task guides or records. These are maintenance
+  targets, never permission to omit applicable safety rules or silently truncate
+  required context. Name an overrun and its next simplification instead.
 - **Leave less to maintain.** Remove superseded code and instructions within
   the verified scope, preserve unrelated work, and update the authoritative
   explanation when behavior changes. State remaining limitations and the next
